@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>My Tech Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#project1">Server Setup</a></li>
+                    <li><a href="#project2">AWK Analysis</a></li>
+                    <li><a href="#project3">Webots Robot</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="project1" class="project-section">
+            <h2>Project 1: Server Installations, Updates, and Network Documentation</h2>
+            <p><strong>Objective:</strong> Document the steps for installing applications and setting up network configurations on a Linux server.</p>
+            <p><strong>Tools Used:</strong> Linux Mint, Tmux, Emacs, Fail2Ban, Vim, Bash scripting.</p>
+            <button class="toggle-btn" onclick="toggleContent('serverDetails')">Show Details</button>
+            <div id="serverDetails" class="details">
+                <p><strong>Key Steps:</strong></p>
+                <ul>
+                    <li>Installed various tools like Vim, Emacs, Fail2Ban.</li>
+                    <li>Configured network settings and firewall using bash scripts.</li>
+                </ul>
+                <p><strong>Challenges:</strong> Configuring routing tables for multiple interfaces.</p>
+                <p><strong>Solution:</strong> Corrected netmask and routing commands.</p>
+            </div>
+        </section>
+
+        <section id="project2" class="project-section">
+            <h2>Project 2: Campaign Contribution Analysis Using AWK</h2>
+            <p><strong>Objective:</strong> Analyze campaign contributions using AWK scripting.</p>
+            <p><strong>Tools Used:</strong> AWK, Bash, Command-line interface.</p>
+            <button class="toggle-btn" onclick="toggleContent('awkDetails')">Show Details</button>
+            <div id="awkDetails" class="details">
+                <p><strong>AWK Commands:</strong></p>
+                <ul>
+                    <li>Extract first names from data file.</li>
+                    <li>Filter by names “Tom” or “Frodo”.</li>
+                    <li>Calculate total contributions for three months.</li>
+                </ul>
+                <p><strong>Challenges:</strong> Parsing large files efficiently.</p>
+                <p><strong>Solution:</strong> Optimized AWK scripts for performance.</p>
+            </div>
+        </section>
+
+        <section id="project3" class="project-section">
+            <h2>Project 3: Webots Maze-Solving Robot</h2>
+            <p><strong>Objective:</strong> Develop a maze-solving robot that finds the brightest spot in the maze using Webots.</p>
+            <p><strong>Tools Used:</strong> Webots, C programming, Light and distance sensors.</p>
+            <button class="toggle-btn" onclick="toggleContent('robotDetails')">Show Details</button>
+            <div id="robotDetails" class="details">
+                <p><strong>Algorithm:</strong> Depth-first search to navigate the maze.</p>
+                <p><strong>Sensors:</strong> Light and distance sensors for obstacle detection and navigation.</p>
+                <p><strong>Challenges:</strong> Calibrating light sensors to detect small variations.</p>
+                <p><strong>Solution:</strong> Adjusted sensitivity and used weighted averages.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 My Tech Portfolio | <a href="#contact">Contact Me</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
