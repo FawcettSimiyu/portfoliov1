@@ -1,21 +1,9 @@
-function toggleContent(sectionId) {
-    const detailsSection = document.getElementById(sectionId);
-    
-    if (detailsSection.style.display === 'none' || detailsSection.style.display === '') {
-        detailsSection.style.display = 'block';
-        detailsSection.style.animation = 'fadeIn 0.5s';
+function toggleContent(contentId) {
+    const content = document.getElementById(contentId);
+    if (content.style.display === "block") {
+        content.style.display = "none";
     } else {
-        detailsSection.style.display = 'none';
+        content.style.display = "block";
     }
 }
-
-// Add a fade-in animation to toggle the content
-const style = document.createElement('style');
-style.innerHTML = `
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-`;
-document.head.appendChild(style);
 
