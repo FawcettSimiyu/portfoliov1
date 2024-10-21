@@ -12,9 +12,9 @@
             <h1>My Tech Portfolio</h1>
             <nav>
                 <ul>
-                    <li><a href="#project1">Server Setup</a></li>
-                    <li><a href="#project2">AWK Analysis</a></li>
-                    <li><a href="#project3">Webots Robot</a></li>
+                    <li><a href="#project1">Installs, Updates, and Documentation</a></li>
+                    <li><a href="#project2">Networking</a></li>
+                    <li><a href="#project3">Campaign Contribution Analysis Using AWK</a></li>
                 </ul>
             </nav>
         </div>
@@ -22,173 +22,88 @@
 
     <main>
         <section id="project1" class="project-section">
-            <h2>Project 1: Server Installations, Updates, and Network Documentation</h2>
-            <p><strong>Objective:</strong> Document and implement the process of installing applications and setting up network configurations on a Linux server to enhance operational efficiency and security.</p>
+            <h2>Project 1: Server Installations, Updates, and Documentation</h2>
+            <p><strong>Objective:</strong> Document and implement the process of installing applications and setting up configurations on a Linux server to improve efficiency and security.</p>
             <p><strong>Tools Used:</strong> Linux Mint, Tmux, Emacs, Fail2Ban, Vim, Bash scripting.</p>
             <button class="toggle-btn" onclick="toggleContent('serverDetails')">Show Details</button>
             <div id="serverDetails" class="details">
                 <p><strong>Project Goals:</strong> 
                     <ul>
-                        <li>Establish a robust and secure server environment.</li>
-                        <li>Document all installation and configuration processes for future reference.</li>
-                        <li>Implement best practices for server security and maintenance.</li>
+                        <li>Establish a secure and efficient server environment.</li>
+                        <li>Document installation and configuration processes for future use.</li>
+                        <li>Implement server security best practices.</li>
                     </ul>
                 </p>
                 <p><strong>Methodology:</strong>
                     <ul>
-                        <li>Utilized Tmux for managing terminal sessions, allowing for efficient multitasking.</li>
-                        <li>Configured Emacs as a development environment, enhancing productivity with custom settings.</li>
-                        <li>Implemented Fail2Ban for intrusion prevention, automatically banning IP addresses that showed malicious signs.</li>
-                        <li>Documented the server setup process in a structured manner for clarity and future updates.</li>
-                    </ul>
-                </p>
-                <p><strong>Key Steps:</strong>
-                    <ul>
-                        <li>Installed necessary packages including Tmux, Emacs, and Fail2Ban.</li>
-                        <li>Configured firewall settings to restrict unauthorized access.</li>
-                        <li>Documented network settings, including static IP assignment, DNS configuration, and routing tables.</li>
-                        <li>Created a Bash script for automating the installation of essential software.</li>
-                    </ul>
-                </p>
-                <p><strong>Challenges Faced:</strong>
-                    <ul>
-                        <li>Configuring routing tables for multiple network interfaces to ensure proper communication.</li>
-                        <li>Ensuring that the server was secure from unauthorized access while maintaining user accessibility.</li>
-                        <li>Maintaining uptime during critical updates to prevent service disruptions.</li>
-                    </ul>
-                </p>
-                <p><strong>Solutions Implemented:</strong>
-                    <ul>
-                        <li>Used the `ip route` command for accurate configuration of routing tables.</li>
-                        <li>Implemented SSH key authentication and disabled password logins to enhance security.</li>
-                        <li>Scheduled updates during off-peak hours and tested rollback procedures to mitigate risks.</li>
+                        <li>Used Tmux for managing multiple terminal sessions efficiently.</li>
+                        <li>Configured Emacs for development productivity with customized settings.</li>
+                        <li>Implemented Fail2Ban for intrusion prevention.</li>
+                        <li>Thoroughly documented the setup and configurations for future maintenance.</li>
                     </ul>
                 </p>
                 <p><strong>Outcomes:</strong>
                     <ul>
-                        <li>Successfully established a secure and efficient server environment.</li>
-                        <li>Created comprehensive documentation that serves as a reference for future maintenance.</li>
-                        <li>Enhanced knowledge of server management and network configurations.</li>
-                    </ul>
-                </p>
-                <p><strong>Reflection:</strong> 
-                    <ul>
-                        <li>This project reinforced the importance of documentation in IT projects, as it aids in continuity and troubleshooting.</li>
-                        <li>I learned valuable skills in server configuration and security practices that will benefit future endeavors.</li>
+                        <li>Successfully established a secure and efficient server.</li>
+                        <li>Comprehensive documentation created for future reference.</li>
                     </ul>
                 </p>
             </div>
         </section>
 
         <section id="project2" class="project-section">
-            <h2>Project 2: Campaign Contribution Analysis Using AWK</h2>
-            <p><strong>Objective:</strong> Analyze campaign contributions using AWK scripting to derive insights into donor behavior and contribution patterns.</p>
-            <p><strong>Tools Used:</strong> AWK, Bash, Command-line interface, CSV data files.</p>
-            <button class="toggle-btn" onclick="toggleContent('awkDetails')">Show Details</button>
-            <div id="awkDetails" class="details">
+            <h2>Project 2: Networking</h2>
+            <p><strong>Objective:</strong> Set up and configure a network on Linux, ensuring robust security and efficient communication between devices.</p>
+            <p><strong>Tools Used:</strong> Linux Mint, iproute2, iptables, Bash scripting.</p>
+            <button class="toggle-btn" onclick="toggleContent('networkDetails')">Show Details</button>
+            <div id="networkDetails" class="details">
                 <p><strong>Project Goals:</strong>
                     <ul>
-                        <li>Extract meaningful insights from campaign contribution data.</li>
-                        <li>Identify trends and patterns in donor behavior over time.</li>
-                        <li>Provide actionable recommendations based on data analysis.</li>
+                        <li>Configure network settings including static IP, DNS, and routing tables.</li>
+                        <li>Implement firewall rules to enhance network security.</li>
+                        <li>Document the setup for future reference and troubleshooting.</li>
                     </ul>
                 </p>
                 <p><strong>Methodology:</strong>
                     <ul>
-                        <li>Utilized AWK for data manipulation and analysis of large CSV datasets.</li>
-                        <li>Filtered data to focus on specific candidates and timeframes.</li>
-                        <li>Aggregated contribution amounts to identify top donors and trends.</li>
-                    </ul>
-                </p>
-                <p><strong>Key Steps:</strong>
-                    <ul>
-                        <li>Filtered contributions by candidate and month using AWK commands.</li>
-                        <li>Calculated total contributions for each donor to identify major contributors.</li>
-                        <li>Used graphs and visualizations to represent trends in contributions over the election cycle.</li>
-                    </ul>
-                </p>
-                <p><strong>Challenges Faced:</strong>
-                    <ul>
-                        <li>Handling large datasets containing millions of rows efficiently.</li>
-                        <li>Extracting meaningful insights without losing context or detail.</li>
-                        <li>Ensuring accuracy in calculations and data representation.</li>
-                    </ul>
-                </p>
-                <p><strong>Solutions Implemented:</strong>
-                    <ul>
-                        <li>Optimized AWK scripts for performance, using built-in functions for efficiency.</li>
-                        <li>Developed summary statistics to provide quick insights into the data.</li>
-                        <li>Created visualizations using external tools to simplify complex data analysis results.</li>
+                        <li>Used `ip route` to configure routing tables for multiple network interfaces.</li>
+                        <li>Set up firewall rules using `iptables` to restrict unauthorized access.</li>
+                        <li>Documented network setup including IP addresses, DNS, and routing configuration.</li>
                     </ul>
                 </p>
                 <p><strong>Outcomes:</strong>
                     <ul>
-                        <li>Successfully extracted and analyzed trends in campaign contributions.</li>
-                        <li>Identified key donors and provided recommendations for future fundraising strategies.</li>
-                        <li>Enhanced my skills in data analysis and scripting with AWK.</li>
-                    </ul>
-                </p>
-                <p><strong>Reflection:</strong>
-                    <ul>
-                        <li>This project demonstrated the power of scripting for data analysis, allowing me to process large datasets quickly.</li>
-                        <li>I gained a deeper understanding of donor behaviors and the importance of data-driven decision-making in campaigns.</li>
+                        <li>Established a reliable and secure network environment.</li>
+                        <li>Created detailed documentation for network management and troubleshooting.</li>
                     </ul>
                 </p>
             </div>
         </section>
 
         <section id="project3" class="project-section">
-            <h2>Project 3: Webots Maze-Solving Robot</h2>
-            <p><strong>Objective:</strong> Develop a robot capable of navigating a maze and finding the brightest spot using Webots simulation software.</p>
-            <p><strong>Tools Used:</strong> Webots, C programming, Light sensors, Distance sensors.</p>
-            <button class="toggle-btn" onclick="toggleContent('robotDetails')">Show Details</button>
-            <div id="robotDetails" class="details">
+            <h2>Project 3: Campaign Contribution Analysis Using AWK Scripting</h2>
+            <p><strong>Objective:</strong> Analyze campaign contributions using AWK scripting to derive insights into donor behavior and contribution patterns.</p>
+            <p><strong>Tools Used:</strong> AWK, Bash, Command-line interface, CSV data files.</p>
+            <button class="toggle-btn" onclick="toggleContent('awkDetails')">Show Details</button>
+            <div id="awkDetails" class="details">
                 <p><strong>Project Goals:</strong>
                     <ul>
-                        <li>Create an autonomous robot that can navigate through a maze.</li>
-                        <li>Implement a strategy to identify the brightest spot using sensors.</li>
-                        <li>Demonstrate effective use of algorithms in robotics.</li>
+                        <li>Analyze large datasets to extract insights on campaign contributions.</li>
+                        <li>Identify trends and donor behavior over time.</li>
+                        <li>Provide actionable recommendations based on the data analysis.</li>
                     </ul>
                 </p>
                 <p><strong>Methodology:</strong>
                     <ul>
-                        <li>Utilized Webots for simulating the robot's environment and testing algorithms.</li>
-                        <li>Implemented a depth-first search algorithm to explore the maze.</li>
-                        <li>Developed a feedback loop based on light intensity readings from sensors to adjust navigation.</li>
-                    </ul>
-                </p>
-                <p><strong>Key Features:</strong>
-                    <ul>
-                        <li>Integrated light sensors to detect light intensity and guide navigation.</li>
-                        <li>Employed distance sensors to avoid obstacles during the maze exploration.</li>
-                        <li>Created a mapping system to record the robot's path and optimize its route.</li>
-                    </ul>
-                </p>
-                <p><strong>Challenges Faced:</strong>
-                    <ul>
-                        <li>Calibrating sensors for accurate light detection in varying conditions.</li>
-                        <li>Managing unexpected obstacles that could hinder navigation.</li>
-                        <li>Ensuring efficient pathfinding without redundant movements.</li>
-                    </ul>
-                </p>
-                <p><strong>Solutions Implemented:</strong>
-                    <ul>
-                        <li>Conducted multiple test runs to fine-tune sensor sensitivity.</li>
-                        <li>Integrated a collision detection algorithm to help the robot navigate around obstacles.</li>
-                        <li>Optimized the depth-first search algorithm for faster maze exploration.</li>
+                        <li>Used AWK for data manipulation and analysis on large CSV files.</li>
+                        <li>Filtered contributions by candidate, time period, and donor.</li>
+                        <li>Calculated aggregate contributions to identify top donors.</li>
                     </ul>
                 </p>
                 <p><strong>Outcomes:</strong>
                     <ul>
-                        <li>The robot successfully navigated the maze and located the brightest light source.</li>
-                        <li>Enhanced understanding of robotic control and sensor integration.</li>
-                        <li>Produced a comprehensive report detailing the algorithms used and their effectiveness.</li>
-                    </ul>
-                </p>
-                <p><strong>Reflection:</strong>
-                    <ul>
-                        <li>This project solidified my knowledge of robotics and algorithm implementation.</li>
-                        <li>I learned the importance of iterative testing in robotics to address real-world challenges.</li>
+                        <li>Extracted trends in contributions and identified key donors.</li>
+                        <li>Enhanced my data analysis and scripting skills using AWK.</li>
                     </ul>
                 </p>
             </div>
